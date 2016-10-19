@@ -1,0 +1,37 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body ng-app="exmp">
+  <script>
+  var app = angular.module('exmp',[]);
+  app.run(function($rootScope){
+     $rootScope.color = 'blue';
+	 });
+  app.controller('cnt1',function($scope){
+     $scope.color = 'red';
+	 });
+  app.controller('cnt2',function($scope){
+     $scope.color = 'Orange';
+	 });
+  
+  </script>
+  <!--when work on controller use ng-controller="exmpcontroller"-->
+  <div ng-controller="cnt1">
+  <p>now the color is</p>
+  {{color}}
+  </div>
+  
+  <div ng-controller="cnt2">
+  <p>now the color is</p>
+  {{color}}
+  </div>
+  
+  <div>
+  <p>now the color is</p>
+  {{color}}
+  </div>
+ 
+  </body>
+  </html>

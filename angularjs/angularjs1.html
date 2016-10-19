@@ -1,0 +1,20 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+  <body ng-app="exmp">
+  <script>
+  /*angular.module('exmp',[])
+  .controller('exmpcontroller',['$scope',function($scope){
+  $scope.name='whirled';
+  }]);*/
+  
+  </script>
+  <!--when work on controller use ng-controller="exmpcontroller"-->
+  <div ng-controller="exmpcontroller">
+  <label>enter name:<input type="text" ng-model="name" ></label><br>
+ <!-- {{name}}-->
+   <p ng-bind="name"></p>
+  </body>
+  </html>
