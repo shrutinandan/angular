@@ -1,0 +1,126 @@
+noises;
+[]
+obj.noises=noises;
+[]
+obj;
+Object {username: "shradha", lastname: "nandan", noises: Array[0]}
+var getKeys = function(obj){
+   var keys = [];
+   for(var key in obj){
+      keys.push(key);
+   }
+   return keys;
+}
+undefined
+get\
+VM330:1 Uncaught SyntaxError: Invalid or unexpected token
+getKeys
+(obj){
+   var keys = [];
+   for(var key in obj){
+      keys.push(key);
+   }
+   return keys;
+}
+getKeys();
+[]
+getKeys(obj);
+["username", "lastname", "noises"]
+var getKeys = function(obj){
+   var keys = [];
+   for(var key in obj){
+      keys.push(key);
+   }
+   return keys;
+}
+undefined
+var getKeys = function(obj){
+   var keys = [];
+var counter=0;
+   for(var key in obj){
+      keys.push(key);
+counter++;   
+}
+console.log(counter);
+   return keys;
+}
+undefined
+getKeys(obj);
+VM343:8 3
+["username", "lastname", "noises"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////start//////////////////////////
+
+
+
+var aanimals=[];
+undefined
+var obj = {  }
+undefined
+var array[0]=obj;
+VM348:1 Uncaught SyntaxError: Unexpected token [
+var array =[];
+undefined
+array[0]=obj;
+Object {}
+obj.username="shradha";
+"shradha"
+array;
+[Object]
+obj
+Object {username: "shradha"}
+obj['lastname']="nandan";
+"nandan"
+var noises = [];
+undefined
+noises;
+[]
+obj.noises=noises;
+[]
+obj;
+Object {username: "shradha", lastname: "nandan", noises: Array[0]}
+var getKeys = function(obj){
+   var keys = [];
+   for(var key in obj){
+      keys.push(key);
+   }
+   return keys;
+}
+undefined
+var getKeys = function(obj){
+   var keys = [];
+var counter=0;
+   for(var key in obj){
+      keys.push(key);
+counter++;   
+}
+console.log(counter);
+   return keys;
+}
+undefined
+getKeys(obj);
+VM360:8 3
+["username", "lastname", "noises"]
