@@ -1,0 +1,73 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+<title>Assginment4</title>
+
+<script>
+function myFunction() {
+ <!--    var x = document.getElementById("gender").value;
+<!--	var a = x.search;-->
+<!--	b = a.split('=');-->
+  <!--  document.getElementById("abc").innerHTML = b[1];-->
+ -->
+	 document.getElementById('display1').innerHTML = 
+                    document.getElementById("gender").value;
+}
+</script>
+
+</head>
+<body>
+<form >
+<label >Select the following option</label>
+
+
+  <input type="submit" onclick="myFunction();"><br/>
+  <label>Your input: </label>
+  <p><span id='display1'></span></p>
+</form>
+</body>
+
+
+</html>	
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput()
+	{
+	console.log('gender', document.getElementById("gender"));
+	debugger;
+		if( document.getElementById("gender").checked == true)
+			{
+				
+				document.getElementById('display').innerHTML = 
+							document.getElementById("gender").value;
+							console.log(document.getElementById("gender").value);
+							
+			}
+		else if(document.getElementById("gender1").checked == true)
+	
+		{
+			document.getElementById('display').innerHTML = 
+						document.getElementById("gender1").value;
+		
+		}
+	}
+</script>
+
+  </head>
+<body>
+
+  <form>
+    <label><b>Enter a Message</b></label>
+   <input type="radio" value="male" id="gender" name="gender" checked>Male</input>
+<input type="radio" value="female" id="gender1"  name="gender">Female</input>
+  </form>
+
+  <input type="submit" onclick="showInput();"><br/>
+  <label>Your input: </label>
+  <p><span id='display'></span></p>
+</body>
+</html>
+

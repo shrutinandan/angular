@@ -1,0 +1,233 @@
+.main{
+	text-align: center;
+	background:#799dd8;
+	background-size: cover;
+	height: 100%; 
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+	background-image: url("images1.jpeg");
+   
+}
+
+.main .container {
+	position: relative;
+    top: 100px;
+    background-color: white;
+    border: 1px solid black;
+    margin: auto;
+    padding: 12px;
+    width: 800px;
+    display: inline-block;
+}
+.main .copyright {
+	position:relative;
+	top:100px;     
+	margin-left: 176px;
+    padding: 24px;
+}
+div  .2two {
+    border: 2px solid green;    
+    margin-right: 174px;
+}
+.user{
+  
+  width: 100%;
+    height: 37px;
+}
+
+div.logo{
+  padding:10px;
+ 
+  
+}
+.pass1 {
+	width: 267px;
+    height: 33px;
+	margin-top: 8px;
+} 
+.user1 {
+width: 267px;
+    height: 33px;
+	}
+
+	
+img { 
+   padding: 5px;
+   height:35px;
+   width:50px;
+
+}
+  
+div.form{
+	    background-color: white;
+    /* padding: 1px 30px 40px 20px; */
+    margin: 2px;
+    display: inline-block;
+    width: 272px;
+    /* height: 121px; */
+    left: 10px;
+    top: 100px;
+    bottom: 30px;
+    float: left;
+}
+.button {
+    width: 267px;
+    background-color: #0050d1;
+    border: none;
+    color: white;
+    /* padding: 7px 18px; */
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 21px 11px;
+    cursor: pointer;
+    margin-left: 3px;
+    height: 33px;
+}
+
+div.check {
+	margin: 44px;
+    margin-left: -214px;
+	
+}
+
+h3 {
+	margin-left: 138px;
+    margin-top: -21px;
+}
+
+div.forgetpass {
+	margin-top: -63px;
+    margin-right: -162px;
+	}
+	
+div.mainform {
+	/*margin-left: -43px;*/
+}
+
+div.right {
+	background-color:white;
+	font-size:50px;
+	font-family: 'Raleway', sans-serif;  
+	float:right;
+}
+
+div.col {
+	background-color:#043687;
+    padding: 100px;
+    width: 316px;
+}
+
+div.textmain {
+	border:5px black;
+	background-color:white;
+    padding: 10px;    
+    height: 100px;
+      
+}
+
+div.text1
+{
+    background-color: #062556;
+    height: 120px;
+    width: 32%;
+    float: left;
+    /* margin-right: 0px; */
+    margin-left: -9px;
+    
+}
+}
+
+div.textmain.h1 {
+	font-size:20px;
+	font-width:10px;
+	color:white;
+}
+
+div.text2 {
+	    background-color: #062556;
+    height: 120px;
+    width: 34%;
+    float: left;
+   
+    margin-left: 10px;
+}
+
+div.text3 {
+	    background-color: #062556;
+    height: 120px;
+    width: 34%;
+    float: left;
+     
+    margin-left: 10px;
+    margin-right: -14px;
+}
+
+div.heading { 
+      font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    /* margin-top: -54px; */
+    /* margin-left: -34px; */
+    text-align: center;
+    text-transform: uppercase;
+	    margin-bottom: 9px;
+}
+
+h6 {
+	font-size:20px;
+	color:#3870c9;
+	width:10px;
+	height:5px;
+	margin:11px;
+	
+	
+}
+
+p {
+    font-size: 9px;
+    color: white;
+    margin: 39px;
+    margin-left: 6px;
+    padding: 4px;
+}
+div.container2 {
+
+}
+div.form span {
+
+}
+ .sp {
+    color: white;
+    float: left;
+    /* clear: both; */
+    /* padding-top: 102px; */
+    /* padding-left: 201px; */
+    height: 387px;
+    /* font-size: 13px;*/
+}
+
+.two {
+    border: 2px solid green;
+    padding: -2px;
+    float: right;
+    /* clear: both; */
+    /* margin-left: 117px; */
+    padding: 0px;
+    margin-right: 174px;
+}
+div.1one {
+padding:10px;
+}
+
+.2two  a{
+	border: 2px solid green;
+    padding-left: 0px;
+    margin-right: 174px;    
+    float: right;
+}
+
+

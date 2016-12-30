@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app= "store">
+    <head>
+    <title>My App</title>
+    <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet"/>
+  
+   <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\angular.min.js"></script>
+<script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\app10.js"></script>
+
+    </head> 
+
+    <body ng-controller="AppController as apps"> 
+    <div class= "container">
+		<div class="main">	
+			<div class = "row xyz"> 
+				<div class = "col-md-6 left" >
+				<table class ="table table-hover ">
+		<thead>
+		  <tr>		 
+			 <th>userid</th>		
+			 <th>FirstName</th>		 
+			 <th>LastName</th>
+			  <th>email</th>
+			<th></th>			  
+		  </tr>
+		</thead>
+   
+  	<tr ng-repeat="apps in data.allUsers track by $index">	
+	<td> {{apps.userId}}</td>	
+	<td> {{apps.firstName}} </td> 
+	 <td>{{apps.lastName}}</td>	
+	<td>{{apps.email}}</td>	
+	<td><button ng-click="removeItem($index)" >
+	<span class="glyphicon glyphicon-triangle-right" style="color:blue;">
+	</span></button><td>
+	
+	</tr>
+	</table>
+				
+				</div>
+				<div class = "col-md-6 right" >
+				<table class ="table table-hover ">
+		<thead>
+		  <tr>		
+			<th></th>			  
+			 <th>userid</th>		
+			 <th>FirstName</th>		 
+			 <th>LastName</th>
+			  <th>email</th>
+				  
+		  </tr>
+		</thead>
+   
+  	<tr ng-repeat="apps in data.selectedUsers track by $index">	
+	<td><button ng-click="addItem($index)" >
+	<span class="glyphicon glyphicon-triangle-left" style="color:blue;">
+	</span></button></td>
+	<td> {{apps.userId}}</td>	
+	<td> {{apps.firstName}} </td> 
+	 <td>{{apps.lastName}}</td>	
+	<td>{{apps.email}}</td>	
+	
+	
+	</tr>
+	</table>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+    </body>
+</html>
+
+<!-- 
+<div ng-app>
+		<div ng-controller="ShoppingCartCtrl">
+            <br />
+			<table border="1">
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>Price</td>
+						<td>Quantity</td>
+                        <td>Remove Item</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in items">
+						<td>{{item.Name}}</td>
+						<td>{{item.Price}}</td>
+						<td>{{item.Quantity}}</td>
+						<td><input type="button" value="Remove" ng-click="removeItem($index)" /></td>
+					</tr>
+				</tbody>
+			</table>
+			<br />
+			<div>Total Price: {{totalPrice()}}</div>
+			<br />
+			<table>
+				<tr>
+					<td>Name: </td>
+					<td><input type="text" ng-model="item.Name" /></td>
+				</tr>
+				<tr>
+					<td>Price: </td>
+					<td><input type="text" ng-model="item.Price" /></td>
+				</tr>
+				<tr>
+					<td>Quantity: </td>
+					<td><input type="text" ng-model="item.Quantity" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="Button" value="Add" ng-click="addItem(item)" /> </td>
+					
+				</tr>
+			</table>
+		</div>
+	</div> -->

@@ -1,0 +1,159 @@
+<!DOCTYPE html5>
+<html>
+<head>
+ <title>Assignment3</title>
+ <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet">
+ <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\style3.css" type="text/css" rel="stylesheet" /> 
+<script type="text/javascript">
+function validateForm() {
+    var x = document.forms["myForm"]["firstname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }; 
+	
+    //var y = document.getElementById("mobilenumber").value;
+    var z = document.forms["myForm"]["mobilenumber"].value;
+	console.log("number ",z);
+	if(z.length>10){
+	alert("Name must be filled out");
+	text = "Input 101";
+	}
+   /* else if (isNaN(z) || z > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }*/
+    <!-- document.getElementById("demo").innerHTML = text; -->
+
+ var x1 = document.forms["myForm"]["email1"].value;
+    var atpos = x1.indexOf("@");
+    var dotpos = x1.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x1.length) {
+        alert("Not a valid e-mail address");
+        return false;
+}
+}
+</script>
+</head>
+<body>
+<div class= "container">	
+		<div class="row heading">		
+			<h4>FORM</h4>
+		</div>
+<form class = "form-horizontal" role = "form" onsubmit="return validateForm()" method="post" name="myForm">
+   
+   <div class = "form-group ">
+      <label for = "firstname" class = "col-sm-6 control-label" >First Name</label>
+		
+      <div class = "col-sm-6">
+         <input type = "text" class = "form-control" id = "firstname" placeholder = "Enter First Name" required>   </div>
+   </div>
+   
+   <div class = "form-group">
+      <label for = "lastname" class = "col-sm-6 control-label">Sur Name</label>
+		
+      <div class = "col-sm-6">
+         <input type = "text" class = "form-control" id = "surname" placeholder = "Enter Last Name">
+      </div>
+   </div>
+  <div class = "form-group">
+      <label for = "email" class = "col-sm-6 control-label">Email</label>
+		
+      <div class = "col-sm-6">
+         <input type = "email" class = "form-control" id = "email1" placeholder = "email " >
+      </div>
+   </div>
+   <div class = "form-group">
+      <label for = "mobilenumber" class = "col-sm-6 control-label">Mobile Number</label>
+		
+      <div class = "col-sm-6">
+         <input type = "number" class = "form-control" id = "mobilenumber" placeholder = "Mobile Number" required >
+      </div>
+   </div><div class = "form-group">
+      <label for = "lastname" class = "col-sm-6 control-label">Landline</label>
+		
+      <div class = "col-sm-6">
+         <input type = "text" class = "form-control" id = "landline" placeholder = "Enter Last Name" >
+      </div>
+   </div>
+  
+   
+   
+   
+   <div class = "form-group">
+      <div class = "col-sm-offset-6 col-sm-6">
+         <button type = "submit" class = "btn btn-primary">Sign in</button>
+      </div>
+   </div>
+</div>	
+ </body>
+</html>
+
+
+
+
+<!-- function ValidateContactForm()
+{
+    var name = document.ContactForm.Name;
+    var email = document.ContactForm.Email;
+    var phone = document.ContactForm.Telephone;
+    var nocall = document.ContactForm.DoNotCall;
+    var what = document.ContactForm.Subject;
+    var comment = document.ContactForm.Comment;
+
+    if (name.value == "")
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+    
+    if (email.value == "")
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if ((nocall.checked == false) && (phone.value == ""))
+    {
+        window.alert("Please enter your telephone number.");
+        phone.focus();
+        return false;
+    }
+
+    if (what.selectedIndex < 1)
+    {
+        alert("Please tell us how we can help you.");
+        what.focus();
+        return false;
+    }
+
+    if (comment.value == "")
+    {
+        window.alert("Please provide a detailed description or comment.");
+        comment.focus();
+        return false;
+    }
+    return true;
+}
+
+ -->
+
+
+
+
+

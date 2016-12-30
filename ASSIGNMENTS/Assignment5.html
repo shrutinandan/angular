@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app= "store">
+    <head>
+    <title>My App</title>
+    <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet"/>
+ <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\style3.css" type="text/css" rel="stylesheet" /> 
+   <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\angular.min.js"></script>
+<script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\app.js"></script>
+
+    </head> 
+
+
+    <body ng-controller="AppController as apps"> 
+        <!-- {{data}} -->
+		<table class ="table table-hover ">
+		<thead>
+		  <tr>
+		  <th><span class="glyphicon glyphicon-star-empty"></span></th>
+			 <th>dashboard</th>
+			 <th></th>
+			 <th>modified</th>		 
+			 <th>author</th>
+			  <th>status</th>
+			   <th>views</th> 
+			   <th>rating</th>
+			   <th></th>
+		  </tr>
+		</thead>
+   
+  	<tr ng-repeat="apps in data ">
+	<td><span class = "glyphicon glyphicon-star-empty"></span></td>
+	<td> {{apps.dashboard}}</td>
+	<td> <span class="glyphicon glyphicon-align-justify" style="color:#5bc0de; border-color: #46b8da;"></span></td>
+	<td> {{apps.modified}} </td> 
+	 <td>{{apps.author}}</td>
+	<td><span class="glyphicon glyphicon-yen"></span></td>
+	<td>{{apps.views}}</td>	 
+	<td><span ng-repeat="day  in apps.rating track by $index" ng-style="day" 
+	class="glyphicon glyphicon-star" style="color:yellow;" >
+	{{day.apps.rating}}
+	</span>
+	</td>
+	<td>{{apps.values}}</td>
+	</tr>
+	</table>
+	
+    </body>
+	
+</html>

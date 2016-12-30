@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app= "myApp">
+    <head>
+    <title>My App</title>
+    <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet"/>
+  
+   <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\angular.min.js"></script>
+<script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\appDemo.js"></script>
+
+    </head> 
+
+
+<div ng-controller='demoController'>
+
+<div ng-repeat="dataRepeat in demoData.data">
+<my-widget data='dataRepeat'>{{dataRepeat}}</my-widget>
+</div>
+
+
+</div>
