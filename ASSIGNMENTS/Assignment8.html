@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+   
+    <link href="C:\Users\shrutin\Desktop\ASSIGNMENTS\gridster1\bootstrap-3.3.7-dist\css\bootstrap.min.css" rel="stylesheet" type="text/css" />
+        		 
+		<link rel="stylesheet" href="C:\Users\shrutin\Desktop\ASSIGNMENTS\angular-gridster.min.css"></link>
+   
+   <!-- <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\lib\jquery.dropdown.js"></script> -->
+   <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\lib\jquery.js"></script>
+   <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\lib\bootstrap.js"></script>
+   <script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\angular.min.js"></script>
+<script src="C:\Users\shrutin\Desktop\ASSIGNMENTS\app8.js"></script>   
+    
+</head>
+<body ng-controller="AppController as app" >
+<div> <!-- ng-repeat="apps in data.abc[0]" > -->
+<custom-directiveone abc-a='data.abc[0] '></custom-directiveone>
+</div>
+<div ><!-- ng-repeat="apps in data.abc[1]"> -->
+<custom-directivetwo abc-d=' data.abc[1]'></custom-directivetwo>
+</div>
+<div ><!-- ng-repeat="apps in data.abc[1]"> -->
+<custom-directivethree abc-e=' data.abc[2]'></custom-directivethree>
+</div>
+<div ><!-- ng-repeat="apps in data.abc[1]"> -->
+<custom-directivefour abc-f=' data.abc[3]'></custom-directivefour>
+</div>
+ <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+
+<!-- <div class="row">
+	<div class="col-md-8"  >	
+	questions: {{apps.questions}}
+	 {{apps.type}}
+
+	</div>
+</div> -->
+<!-- <tr ng-repeat="apps in data.allUsers track by $index">	 -->
+
+</body>
+</html>
